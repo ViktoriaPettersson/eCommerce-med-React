@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    display: block;
+}
+.cart {
+    cursor: pointer;
+}
+.nav-link {
+    position: relative;
+  }
+a.nav-link.active::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #DBECE2;
+    left: 0.3rem;
+    right: 0.3rem;
+    top: 2rem;
+  }
+
+  @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #4e54c8;
+    overflow: hidden;
+    z-index: -1;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 37%;
+    width: 141px;
+    height: 141px;
+    bottom: -141px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 29%;
+    width: 111px;
+    height: 111px;
+    bottom: -111px;
+    animation-delay: 2s;
+}
+.background li:nth-child(2) {
+    left: 14%;
+    width: 122px;
+    height: 122px;
+    bottom: -122px;
+    animation-delay: 7s;
+}
+.background li:nth-child(3) {
+    left: 33%;
+    width: 152px;
+    height: 152px;
+    bottom: -152px;
+    animation-delay: 9s;
+}
+.background li:nth-child(4) {
+    left: 76%;
+    width: 161px;
+    height: 161px;
+    bottom: -161px;
+    animation-delay: 15s;
+}
+.background li:nth-child(5) {
+    left: 64%;
+    width: 197px;
+    height: 197px;
+    bottom: -197px;
+    animation-delay: 6s;
+}
+.background li:nth-child(6) {
+    left: 13%;
+    width: 165px;
+    height: 165px;
+    bottom: -165px;
+    animation-delay: 3s;
+}
+.background li:nth-child(7) {
+    left: 19%;
+    width: 174px;
+    height: 174px;
+    bottom: -174px;
+    animation-delay: 6s;
+}
+.background li:nth-child(8) {
+    left: 87%;
+    width: 184px;
+    height: 184px;
+    bottom: -184px;
+    animation-delay: 2s;
+}
+.background li:nth-child(9) {
+    left: 16%;
+    width: 123px;
+    height: 123px;
+    bottom: -123px;
+    animation-delay: 12s;
+}
+.product-image{
+    cursor: pointer;
+}
+.showcase {
+    margin-top: 10%;
+    background-color: #8d24aa86;
+    border-radius: 1rem;
+}
+.showcase-text {
+    max-width: 30rem;
+    margin: auto;
+}
+.shoppingcart {
+    width: 30rem;
+    max-height: 40rem;
+    overflow-y: scroll;
+}
